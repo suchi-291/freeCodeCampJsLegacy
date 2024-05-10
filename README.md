@@ -52,3 +52,5 @@ So, the recursive function works like this:
 - Otherwise, return the product of multiply(arr, n - 1) * arr[n - 1], which means the product of the first 'n-1' numbers multiplied by the 'n'th number.
 
 This process keeps repeating, with the function calling itself with a smaller 'n' each time, until it reaches the base case where 'n' is 0 or less. At this point, all the recursive calls finish, and the final product is calculated.
+
+The first valid return statement gets executed first!!
