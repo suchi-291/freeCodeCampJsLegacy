@@ -20,4 +20,4 @@ I'm also adding a logs file, where I will blog about my progress so far on freec
 
 **Function Scope** - *A function can have a local variable with the same name as a Global Variable, within the scope of that function, whenever the variable is called, the overwritten value is used, but coming out of the function, the variable will continue o have the global variable value it had unless and untill reassigned.*
 
-When a function does not havve a return statement, it processes the inner code but it gives the output "undefined"
+When a function does not have a return statement, it processes the inner code but it gives the output "undefined"
