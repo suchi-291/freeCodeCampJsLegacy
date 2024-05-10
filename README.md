@@ -31,3 +31,24 @@ new items will be added at the back, old items will be removed from the front, w
 **someObject.hasOwnProperty(someProperty)**
 
 **Record cllection problem was tough for me**
+
+
+**Recursion**
+
+Sure! Let's simplify the concept of recursion and the example given.
+
+Recursion is like when you ask a question, and part of the answer includes asking the same question again but with a simpler version of the problem. This keeps happening until you reach the simplest form of the problem, which you already know the answer to.
+
+Imagine you have a list of numbers (an array), and you want to multiply the first 'n' numbers together to get a final product. You can do this with a loop, where you start with a product of 1 and keep multiplying it by each number in the array until you reach the 'n'th number.
+
+However, you can also solve this problem using recursion. Here's how:
+
+1. **Base Case**: We need a rule to stop the recursion. In this case, when 'n' becomes 0 or less, we know that there are no more numbers left to multiply, so we return 1 (since multiplying by 1 doesn't change the number).
+
+2. **Recursive Step**: For any 'n' greater than 0, we can find the product of the first 'n' numbers by multiplying the product of the first 'n-1' numbers by the 'n'th number in the array.
+
+So, the recursive function works like this:
+- If 'n' is 0 or less, return 1 (base case).
+- Otherwise, return the product of multiply(arr, n - 1) * arr[n - 1], which means the product of the first 'n-1' numbers multiplied by the 'n'th number.
+
+This process keeps repeating, with the function calling itself with a smaller 'n' each time, until it reaches the base case where 'n' is 0 or less. At this point, all the recursive calls finish, and the final product is calculated.
