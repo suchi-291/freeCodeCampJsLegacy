@@ -27,3 +27,5 @@ A queue is an abstract Data Structure where items are kept in order.
 New items can be added at the back of the queue and old items are taken off from the front of the queue.
 new items will be added at the back, old items will be removed from the front, when new item is added, old one at the front will be removed 
 *shift(), push()*
+
+**someObject.hasOwnProperty(someProperty)**
