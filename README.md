@@ -15,3 +15,4 @@ I'm also adding a logs file, where I will blog about my progress so far on freec
 
 *I always confuse with the slash*
 
+**Strings are immutable** - once a string is declared we can not reassign one of its characters using index, that is possible only for arrays.
