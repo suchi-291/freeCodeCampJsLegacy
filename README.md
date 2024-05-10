@@ -29,3 +29,5 @@ new items will be added at the back, old items will be removed from the front, w
 *shift(), push()*
 
 **someObject.hasOwnProperty(someProperty)**
+
+**Record cllection problem was tough for me**
