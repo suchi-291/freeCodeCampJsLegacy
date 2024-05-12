@@ -22,6 +22,10 @@ I'm also adding a logs file, where I will blog about my progress so far on freec
 
 When a function does not have a return statement, it processes the inner code but it gives the output "undefined"
 
+# ES6
+- Let, Const
+- Arrow Functions
+
 **Queue** - 
 A queue is an abstract Data Structure where items are kept in order.
 New items can be added at the back of the queue and old items are taken off from the front of the queue.
