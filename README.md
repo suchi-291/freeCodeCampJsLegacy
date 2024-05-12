@@ -22,9 +22,6 @@ I'm also adding a logs file, where I will blog about my progress so far on freec
 
 When a function does not have a return statement, it processes the inner code but it gives the output "undefined"
 
-# ES6
-- Let, Const
-- Arrow Functions
 
 **Queue** - 
 A queue is an abstract Data Structure where items are kept in order.
@@ -58,3 +55,8 @@ So, the recursive function works like this:
 This process keeps repeating, with the function calling itself with a smaller 'n' each time, until it reaches the base case where 'n' is 0 or less. At this point, all the recursive calls finish, and the final product is calculated.
 
 The first valid return statement gets executed first!!
+
+
+# ES6
+- Let, Const
+- Arrow Functions
