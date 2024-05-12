@@ -60,3 +60,4 @@ The first valid return statement gets executed first!!
 # ES6
 - Let, Const
 - Arrow Functions
+- Default parameters to functions
