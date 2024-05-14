@@ -47,3 +47,4 @@ The first valid return statement gets executed first!!
 - Let, Const
 - Arrow Functions
 - Default parameters to functions
+- Rest parameters - condense a group of elements in to an array [from ES2018, we can apply this to objects also]
