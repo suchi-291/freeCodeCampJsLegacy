@@ -48,3 +48,6 @@ The first valid return statement gets executed first!!
 - Arrow Functions
 - Default parameters to functions
 - Rest parameters - condense a group of elements in to an array [from ES2018, we can apply this to objects also]
+- To find maximum value among a group of values - Math.max() expects comma separated arguments but not an array, so it throws an error. Up untill ES5 we needed to use apply()method along with Math.max.apply(null, arr);
+- Spread operator is used to unpack an array.
+- so now Math.max(...arr) would give us the maximum value of an array.
