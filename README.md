@@ -1,24 +1,26 @@
-# freeCodeCampJsLegacy 
+# freeCodeCampJsLegacy
+
 As a part of my 100 days of Code challenge, I'm embarking on this journey of learning Javascript Algorithms and Data Structures
 
 I'm also adding a logs file, where I will blog about my progress so far on freecodecamp!
 
 ## Basic Javascript
-- ### **Strings are immutable**
- once a string is declared we can not reassign one of its characters using index, that is possible only for arrays.
 
+- ### **Strings are immutable**
+
+  once a string is declared we can not reassign one of its characters using index, that is possible only for arrays.
 
 - ### **Function Scope**
-A function can have a local variable with the same name as a Global Variable, within the scope of that function, whenever the variable is called, the overwritten value is used, but coming out of the function, the variable will continue o have the global variable value it had unless and untill reassigned.
+  A function can have a local variable with the same name as a Global Variable, within the scope of that function, whenever the variable is called, the overwritten value is used, but coming out of the function, the variable will continue o have the global variable value it had unless and untill reassigned.
 
 When a function does not have a return statement, it processes the inner code but it gives the output "undefined"
 
+- ### **Queue** -
 
-- ### **Queue** - 
-A queue is an abstract Data Structure where items are kept in order.
-New items can be added at the back of the queue and old items are taken off from the front of the queue.
-new items will be added at the back, old items will be removed from the front, when new item is added, old one at the front will be removed 
-*shift(), push()*
+  A queue is an abstract Data Structure where items are kept in order.
+  New items can be added at the back of the queue and old items are taken off from the front of the queue.
+  new items will be added at the back, old items will be removed from the front, when new item is added, old one at the front will be removed
+  _shift(), push()_
 
 - ### **someObject.hasOwnProperty(someProperty)**
 
@@ -35,15 +37,16 @@ However, you can also solve this problem using recursion. Here's how:
 2. **Recursive Step**: For any 'n' greater than 0, we can find the product of the first 'n' numbers by multiplying the product of the first 'n-1' numbers by the 'n'th number in the array.
 
 So, the recursive function works like this:
+
 - If 'n' is 0 or less, return 1 (base case).
-- Otherwise, return the product of multiply(arr, n - 1) * arr[n - 1], which means the product of the first 'n-1' numbers multiplied by the 'n'th number.
+- Otherwise, return the product of multiply(arr, n - 1) \* arr[n - 1], which means the product of the first 'n-1' numbers multiplied by the 'n'th number.
 
 This process keeps repeating, with the function calling itself with a smaller 'n' each time, until it reaches the base case where 'n' is 0 or less. At this point, all the recursive calls finish, and the final product is calculated.
 
 The first valid return statement gets executed first!!
 
-
 ## ES6
+
 - Let, Const
 - Arrow Functions
 - Default parameters to functions
@@ -51,3 +54,5 @@ The first valid return statement gets executed first!!
 - To find maximum value among a group of values - Math.max() expects comma separated arguments but not an array, so it throws an error. Up untill ES5 we needed to use apply()method along with Math.max.apply(null, arr);
 - Spread operator is used to unpack an array.
 - so now Math.max(...arr) would give us the maximum value of an array.
+
+- Object Short hand property comes in handy to reduce redundancy when we know that the property key and the property value both are same.
