@@ -211,3 +211,11 @@ export default function(x, y) {
   return x + y;
 }
 ```
+
+- To import a default export, we have to use import keyword along with the location.
+
+```js
+import add from "./math_functions.js";
+```
+
+-
