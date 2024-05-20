@@ -56,3 +56,109 @@ The first valid return statement gets executed first!!
 - so now Math.max(...arr) would give us the maximum value of an array.
 
 - Object Short hand property comes in handy to reduce redundancy when we know that the property key and the property value both are same.
+
+- Up until ES5, when we were defining object methods we used the th function keyword, but after ES6, we need not use the function keyword but directly define function
+
+```js
+//ES5
+const person = {
+  name: "Taylor",
+  sayHello: function () {
+    return `Hello! My name is ${this.name}.`;
+  },
+};
+
+//ES6
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  },
+};
+```
+
+##### Constructor Function
+
+A regular function that is used to create objects, which can be used as a blue print if we wanted to create more objects.
+
+```js
+// Step 1: Define a Constructor Function
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHello = function () {
+    console.log("Hello, my name is " + this.name);
+  };
+}
+
+// Step 2: Instantiate the Object
+var person1 = new Person("Alice", 30);
+var person2 = new Person("Bob", 25);
+
+// Using the objects
+person1.sayHello(); // Output: Hello, my name is Alice
+person2.sayHello(); // Output: Hello, my name is Bob
+
+console.log(person1.name); // Output: Alice
+console.log(person2.age); // Output: 25
+```
+
+- Untill ES5 we used 'constructor function' and 'new' keyword to create an instance of an object.
+
+- In ES6, **class** keyword was introduced by using the class, we can create objects.
+  class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object.
+
+- The constructor method is a special method for creating and initializing an object created with a class.
+
+```js
+// Explicit constructor
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+  takeOff() {
+    console.log("To " + this.targetPlanet + "!");
+  }
+}
+
+// Implicit constructor
+class Rocket {
+  launch() {
+    console.log("To the moon!");
+  }
+}
+
+const zeus = new SpaceShuttle("Jupiter");
+// prints To Jupiter! in console
+zeus.takeOff();
+
+const atlas = new Rocket();
+// prints To the moon! in console
+atlas.launch();
+```
+
+- We can obtain values from an object and also set values of property of an object from inside an object itself using **_getters_**, **_Setters_**
+
+- Getter - returns the value of an object's private variable, without user having to access the variable directly
+
+- Setter - modifies the value of an onject's private variable based on the value passed into setter function.
+
+```js
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book("anonymous");
+console.log(novel.writer);
+novel.writer = "newAuthor";
+console.log(novel.writer);
+```
