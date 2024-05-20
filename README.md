@@ -162,3 +162,52 @@ console.log(novel.writer);
 novel.writer = "newAuthor";
 console.log(novel.writer);
 ```
+
+- A script tag that uses this module type can use the import and export features from ES6.
+
+```html
+<script type="module" src="filename.js"></script>
+```
+
+```js
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+};
+
+const lowercaseString = (string) => {
+  return string.toLowerCase();
+};
+
+export { uppercaseString, lowercaseString };
+```
+
+- The relative file path (./) and file extension (.js) are required when using import in this way.
+
+```js
+import { uppercaseString, lowercaseString } from "./string_functions.js";
+```
+
+- To import all the contents of a file into the current file. This can be done with the **import \* as** syntax.
+
+Ex :
+
+```js
+import * as myMathModule from "./math_functions.js";
+```
+
+Here in the above example, import statement will create an object called myMathModule.
+
+- **export default** syntax is used if only one value is being exported from a file or if we needed to create a fallback value for a file or module.
+  We cannot use export default with var, let, or const
+
+```js
+//Named
+export default function add(x, y) {
+  return x + y;
+}
+
+//Anonymous
+export default function(x, y) {
+  return x + y;
+}
+```
